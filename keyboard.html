@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + CSS + JS</title>
+  <style>
+    body{
+      background-color: rgb(211, 197, 197);
+    }
+    .keyboard{
+      display:grid;
+      grid-template-columns: repeat(16,1fr);
+      grid-template-rows: repeat(6,1fr);
+      gap:10px;
+      box-shadow: rgba(0,0,0,3) 0px 3px 0px 3px;
+      background-color: rgb(185, 225, 241);
+      padding:40px;
+      margin:auto;
+      width: 90%;
+      border-radius:20px;
+      margin-top:30px;
+    }
+    .keyboard>div{
+      background-color :rgba(0, 0, 0, 0.852);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      font-weight:bold;
+      font-size:15px;
+      padding:10px;
+      border-radius:5px;
+      
+    }
+    .keyboard>div:hover{
+      background-color:rgb(189, 64, 227);
+      cursor:pointer;
+    }
+    #space{
+      grid-column: 6/span 5;
+    }
+    #shift2{
+      grid-column: 13/span 3;
+    }
+    #backspace,#enter{
+        grid-column: 14/span 2;
+    }
+    #tab,#capslock,#shift1{
+        grid-column: 1/span 2;
+    }
+    #alt1{
+        grid-column: 4/span 2;
+    }
+    #alt2{
+        grid-column: 11/span 2;
+    }
+    #arrow-up{
+        grid-row: 6/span 0.5;
+    }
+
+
+  </style>
+  <body>
+    <div class="keyboard">
+      <div>esc</div>
+      <div>f1</div>
+      <div>f2</div>
+      <div>f3</div>
+      <div>f4</div>
+      <div>f5</div>
+      <div>f6</div>
+      <div>f7</div>
+      <div>f8</div>
+      <div>f9</div>
+      <div>f10</div>
+      <div>f11</div>
+      <div>f12</div>
+      <div>insert</div>
+      <div>prt sc</div>
+      <div>delete</div>
+      <div>`</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>0</div>
+      <div>-</div>
+      <div>=</div>
+      <div id="backspace">backspace</div>
+      <div>home</div>
+      <div id="tab">tab</div>
+      <div>Q</div>
+      <div>W</div>
+      <div>E</div>
+      <div>R</div>
+      <div>T</div>
+      <div>Y</div>
+      <div>U</div>
+      <div>I</div>
+      <div>O</div>
+      <div>P</div>
+      <div>[</div>
+      <div>]</div>
+      <div>\</div>
+      <div>pg up</div>
+      <div id="capslock">caps lock</div>
+      <div>A</div>
+      <div>S</div>
+      <div>D</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>;</div>
+      <div>'</div>
+      <div id="enter">enter</div>
+      <div>pg down</div>
+      <div id="shift1">shift</div>
+      <div>Z</div>
+      <div>X</div>
+      <div>C</div>
+      <div>V</div>
+      <div>B</div>
+      <div>N</div>
+      <div>M</div>
+      <div>,</div>
+      <div>.</div>
+      <div>/</div>
+      <div id="shift2">shift</div>
+      <div>end</div>
+      <div>ctrl</div>
+      <div>fn</div>
+      <div>win</div>
+      <div id="alt1">alt</div>
+      <div id="space">Space</div>
+      <div id="alt2">alt</div>
+      <div>ctrl</div>
+    <div class="arrow left">←</div>
+    <div class="arrow-updown">
+    <div class="arrow up">↑</div>
+    <div class="arrow down">↓</div>
+    </div>
+    <div class="arrow right">→</div>
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
